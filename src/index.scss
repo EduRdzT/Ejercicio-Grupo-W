@@ -425,23 +425,31 @@ FORM
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
     gap: 40px;
 
-    label {
+    .container-tidy-checkbox {
       display: flex;
       align-items: center;
-      font-size: 0.7rem;
       margin-bottom: 10px;
 
-      span {
-        padding-left: 3px;
-        font-weight: bolder;
-        text-decoration: underline;
+      p {
+        font-size: 0.7rem;
+        cursor: default;
+        span {
+          padding-left: 3px;
+          font-weight: bolder;
+          text-decoration: underline;
+          cursor: pointer;
+        }
       }
 
-      input[type="checkbox"] {
+      .tidy-checkbox {
         margin-right: 10px;
-        height: 1.5em;
-        width: 1.5em;
-        accent-color: rgb(207, 207, 207);
+        height: 1.3em;
+        width: 1.3em;
+        border: 1px solid $gris;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $gris;
       }
     }
 
@@ -450,6 +458,7 @@ FORM
       width: 130px;
       height: 35px;
       justify-self: end;
+      align-self: center;
       border: thin solid $rojo;
       background-color: $blanco;
       text-transform: uppercase;
