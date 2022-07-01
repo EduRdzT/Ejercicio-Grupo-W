@@ -1,0 +1,258 @@
+{
+  "modelo": ["selecciona", "Mobi", "Argo", "Pulse", "Ducato Carga Van"],
+  "version": {
+    "selecciona": "selecciona",
+    "Mobi": ["Mobi Trekking", "Mobi Like"],
+    "Argo": [
+      "Argo HGT",
+      "Argo Trekking AT",
+      "Argo Trekking MT",
+      "Argo Drive Plus"
+    ],
+    "Pulse": [
+      "Pulse Drive",
+      "Pulse Drive Plus",
+      "Pulse Audace",
+      "Pulse Impetus"
+    ],
+    "Ducato Carga Van": [
+      "Ducato Cargo Van 15 M3",
+      "Ducato Cargo Van 11.5 M3",
+      "Ducato Cargo Van 9.5 M3"
+    ]
+  },
+  "estados": [
+    "selecciona",
+    "aguascalientes",
+    "baja california",
+    "baja california sur",
+    "campeche",
+    "chiapas",
+    "chihuahua",
+    "cdmx",
+    "coahuila",
+    "colima",
+    "durango",
+    "estado de mexíco",
+    "guanajuato",
+    "guerrero",
+    "hidalgo",
+    "jalisco",
+    "michoacán",
+    "morelos",
+    "nayarit",
+    "nuevo león",
+    "oaxaca",
+    "puebla",
+    "querétaro",
+    "quintana roo",
+    "san luis potosí",
+    "sinaloa",
+    "sonora",
+    "tabasco",
+    "tamaulipas",
+    "tlaxcala",
+    "veracruz",
+    "yucatán",
+    "zacatecas"
+  ],
+  "distribuidor": {
+    "selecciona": "selecciona",
+    "aguascalientes": [
+      "Norte - Auto Distribuidores del Centro",
+      "Sur - Auto Distribuidores del Centro"
+    ],
+    "baja california": [
+      "Tijuana - Autoproductos",
+      "Mexicali - Autoproductos",
+      "Ensenada - Autoproductos",
+      "Tijuana Zona Rio - Autoproductos"
+    ],
+    "baja california sur": [
+      "Los Cabos - Nueva Automotriz del Toro",
+      "La Paz - Nueva Automotriz del Toro"
+    ],
+    "campeche": [
+      "Cd. Del Carmen - Prestigio Motriz",
+      "Campeche - Prestigio Motriz"
+    ],
+    "chiapas": [
+      "Tuxtla - Pastrana de Pedrero",
+      "San Cristóbal - Pastrana de Pedrero",
+      "Comitán - Pastrana de Pedrero",
+      "Tapachula - Grumarmex Autos",
+      "Grumarmex Autos, S.A. de C.V. (Suc. Centro)"
+    ],
+    "chihuahua": [
+      "Parral - Alta Motriz",
+      "Delicias - Alta Motriz",
+      "Cuahtemoc - Alta Motriz",
+      "Periférico de la Juventud - Alta Motriz",
+      "Casas Grandes - Alta Motriz",
+      "Cd. Juárez - Touché Motors"
+    ],
+    "cdmx": [
+      "Agricola Oriental - Farrera Zaragoza",
+      "Ermita - Crysler Autoangar",
+      "Tepepan - Autoangar Tepepan",
+      "Viaducto - Autokasa Viaducto",
+      "La villa - Desertica Motors",
+      "Coyoacan - Automotores de México",
+      "Central de Autopartes",
+      "Navarte - Guillermo Prieto y Cia",
+      "Pedregal - Automotores Soni",
+      "Vallejo - Automundo",
+      "Polanco - Autopolanco "
+    ],
+    "coahuila": [
+      "Saltillo - Coahuila Motors",
+      "Nuevo Torreón - Misol Automotriz",
+      "Centro - Automotriz Lagunera",
+      "Monclova - Autos Monclova",
+      "Sabinas - Automotriz Sabinas",
+      "Piedras Negras - Autos del norte"
+    ],
+    "colima": ["Colima - Motormexa", "Manzanillo - Motormexa"],
+    "durango": [
+      "Durango - Automotriz de Durango",
+      "Av. 20 de Noviembre - Camiones Automóviles y Accesorios",
+      "Gomez Palacios - Misol Automotriz"
+    ],
+    "estado de mexíco": [
+      "Texcoco - Crysler Texcoco",
+      "Coacalco - Kasa Coacalco",
+      "Naucalpan - Kasa Naucalpan",
+      "Tlalnepantla - Vehículos de Tlalnepantla",
+      "Interlomas Mundo Automotriz",
+      "Satelite - Kasa Automotriz",
+      "Cuatitlan - Automotriz Campa",
+      "Lerna - Continental Automotriz",
+      "Metepec - Continental Automotriz"
+    ],
+    "guanajuato": [
+      "Boulevard - Auto Centro de Celaya",
+      "Eje Norponiente - Auto Centro de Celaya",
+      "San Miguel - Auto Centro de Celaya",
+      "Irapuato - Autos Finos",
+      "Guanajuato - Automotriz de León",
+      "León - Automotriz de León",
+      "León - Autobacsa Campestre"
+    ],
+    "guerrero": [
+      "Iguala - Distribuidora de Acapulco",
+      "Chilpancingo - Distribuidora de Acapulco",
+      "Acapulco - Distribuidora de Acapulco"
+    ],
+    "hidalgo": ["Pachuca - Autos Elegantes Pachuca"],
+    "jalisco": [
+      "Ocotlan - Autos Flosol",
+      "Lagos de Moreno - Motormexa",
+      "Tepatitlan - Camarena Automotriz",
+      "CD Guzmán - Motormexa",
+      "Centro - Syc Motors",
+      "Zona Industrial - Camarena Automotriz",
+      "Country - Syc Motors",
+      "Lopez Mateos - Camarena Autz Las fuentes",
+      "Zapopan/Av. Vallarta - Motormexa Gdl",
+      "Acueducto - Motormexa Acueducto",
+      "Zapopan / Av. Vallarta - Roca Automotriz",
+      "Las juntas - Autos Servicios y Refacciones"
+    ],
+    "michoacán": [
+      "Zitácuaro - Michoacán Motors",
+      "Morelia - Sol de Michoacán",
+      "Michoacán - Motrs",
+      "Michoacán Motors 050319",
+      "Uruapan - Fame Uruapan",
+      "Lázaro Cárdenas - Sol de Michoacán",
+      "Zamora - Autos Flosol",
+      "La piedad - Autos Flosol"
+    ],
+    "morelos": [
+      "Cuautla - Cuernavaca Automotriz",
+      "Rio Mayo - Cuernavaca Automotriz",
+      "Zapata - Cuernavaca Automotriz"
+    ],
+    "nayarit": ["Tepic - Alica Automotriz"],
+    "nuevo león": [
+      "Av. Garza Sada - Carone Monterrey",
+      "Av. Lázaro Cárdenas - Mirador Automotriz",
+      "Miguel Aleman - Car One Santa Lucia",
+      "Av. Pablo Gonzáles Garza - Refran Monterrey",
+      "Av. Universidad - Automóviles y camiones",
+      "Cumbres - Car One Monterrey",
+      "San Nicolas - Automóviles y camiones"
+    ],
+    "oaxaca": [
+      "Tuxtepec - Diez Cordoba",
+      "Oaxaca - Automotores Antequera",
+      "Itsmo - Automotores Antequera"
+    ],
+    "puebla": [
+      "Blvd. Dos de Octubre - Grupo Stella",
+      "Calzada Ignacio Zaragoza - Grupo Stella",
+      "Av. Reforma - Grupo Stella",
+      "Av. Hermanos Serdán - Grupo Stella",
+      "Boulevard Atlixcayotl - Grupo Stella",
+      "San Martin - Rivera Apizaco",
+      "Tehuacán - Diaz Orizaba",
+      "Teziutlan - Sábalo de Xalapa"
+    ],
+    "querétaro": [
+      "San Juan - Automotores de Querétaro",
+      "Carretera México Querétaro",
+      "Av. 5 de Febrero - Pro Querétaro"
+    ],
+    "quintana roo": [
+      "Chetumal Automotores",
+      "Playa del Carmen - Automotriz Caribe",
+      "Cancún - Automotriz Caribe"
+    ],
+    "san luis potosí": [
+      "Rio Verde - Vehículos Automotrices Potosinos",
+      "Santa Fe Oriente - Vehículos Automotrices Potosinos",
+      "Matehuala - Vehículos Automotrices Potosinos"
+    ],
+    "sinaloa": [
+      "Lomas de Mazatlán - Palmas Automotriz",
+      "Culiacán Blvd. Pedro Infante - Premier Autocontry",
+      "Centro - Torres Automotriz",
+      "Los Michis - Premier Autocontry Michis"
+    ],
+    "sonora": [
+      "Juárez - Automotriz Sonorense",
+      "Centro - Automotriz de Cajeme",
+      "Guaymas - González R. Automotriz",
+      "Hermosillo - González R. Automotriz",
+      "Nogales - Caborca Automotriz",
+      "Centro - Caborca Automotriz",
+      "San Luis Rio Colorado - Autoproductos"
+    ],
+    "tabasco": ["Villahermosa - Automotriz Tabasco"],
+    "tamaulipas": [
+      "Tampico - Megamotors",
+      "Cd. Victoria - Automotriz de Tamaulipas",
+      "Matamoros - Refran Lerdo",
+      "Reynosa - Refran Lerdo",
+      "Av. Reforma - Refran Lerdo"
+    ],
+    "tlaxcala": ["Apizaco - Rivera Apizaco"],
+    "veracruz": [
+      "Centro - Diez Orizaba",
+      "Córdoba - Diez Orizaba",
+      "Xalapa - Sábalo de Xalapa",
+      "Poza Rica - Comercializadora Automotriz",
+      "Diaz Mirón - Diez Veracruz",
+      "Tuxpan - Comercializadora Autz Poza Rica",
+      "Cosoleacaque - Diez Coatza suc Coso",
+      "Minatitlan - Diez de Coatzacoalcos Suc Mina"
+    ],
+    "yucatán": [
+      "Montejo - Automaya Suc Montejo",
+      "Itzaes - Automaya",
+      "Valladolid - Automaya"
+    ],
+    "zacatecas": ["Guadalupe - Automóviles CGE", "Fresnillo - Automóviles CGE"]
+  },
+  "plazos": ["72 meses", "24 meses", "12 meses"]
+}
