@@ -34,14 +34,21 @@ const Formulario = ({ disign }) => {
         estados={estados}
       />
 
-      <TitleSection
-        title="Datos personales"
-        subtitle="Escribe tus datos personales"
-      />
+      <TitleSection title="Datos personales" />
 
       <DatosPersonales />
 
+      <TitleSection
+        title="cita"
+        subtitle="Agenda el día para conducir un Fiat"
+      />
+
       <WayToPay />
+
+      <TitleSection
+        title="Comentarios"
+        subtitle="Queremos conocer tu opinión"
+      />
 
       <InputTextArea />
 

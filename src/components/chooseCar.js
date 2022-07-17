@@ -12,12 +12,14 @@ const ChooseCar = ({ setEstados, setModelo, modelo, estados }) => {
   };
 
   return (
-    <div className="container-select">
+    <>
       <FormSelect seccion="modelo" options={DB.modelo} modelo={getModelo} />
-      <FormSelect seccion="versión" options={DB.version[modelo]} />
-      <FormSelect seccion="estado" options={DB.estados} modelo={getEstados} />
+      <div className="container-select">
+        <FormSelect seccion="versión" options={DB.version[modelo]} />
+        <FormSelect seccion="estado" options={DB.estados} modelo={getEstados} />
+      </div>
       <FormSelect seccion="distribuidor" options={DB.distribuidor[estados]} />
-    </div>
+    </>
   );
 };
 

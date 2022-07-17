@@ -10,31 +10,31 @@ const DatosPersonales = () => {
           typeInput="text"
           labelFor="nombre"
           labelText="nombre (s)"
-          placeholderInput="Escribe tu nombre"
+          placeholderInput="ej. Juan"
         />
         <FormPersonales
           typeInput="text"
           labelFor="apellidoPaterno"
           labelText="Apellido paterno"
-          placeholderInput="Escribe tu apellido"
+          placeholderInput="ej. López"
         />
         <FormPersonales
           typeInput="text"
           labelFor="apellidoMaterno"
           labelText="Apellido materno"
-          placeholderInput="Escribe tu apellido"
+          placeholderInput="ej.Trovar"
         />
         <FormPersonales
           typeInput="email"
           labelFor="email"
           labelText="email"
-          placeholderInput="correo@email.com.mx"
+          placeholderInput="tu@email.com.mx"
         />
         <FormPersonales
           typeInput="tel"
           labelFor="telefono"
           labelText="teléfono"
-          placeholderInput="01.844.439.0654"
+          placeholderInput="(LADA) 000 00 00"
         />
       </div>
       <WhereToContact />

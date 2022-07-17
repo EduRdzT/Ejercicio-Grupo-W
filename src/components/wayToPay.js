@@ -1,15 +1,13 @@
 import React, { useContext, useEffect, useRef } from "react";
-import FormPersonales from "./formPersonales";
-import FormSelect from "./formSelect";
-import DB from "../json/db.json";
 import { checkbox } from "../helpers/checkbox";
-import TitleSection from "./titleSection";
 import DisignContext from "../context/disignContext";
+import FormPersonales from "./formPersonales";
 
 const WayToPay = () => {
   let refPago = useRef(),
     refContado = useRef(),
-    refCredito = useRef();
+    refCredito = useRef(),
+    refTarde = useRef();
   const { checkboxStyle, color } = useContext(DisignContext);
 
   useEffect(() => {
@@ -18,43 +16,36 @@ const WayToPay = () => {
 
   return (
     <section id="section-pago">
-      <TitleSection
-        title="Forma de pago"
-        subtitle="Personaliza tu cotización"
+      <FormPersonales
+        typeInput="text"
+        labelFor="fecha"
+        labelText="fecha"
+        placeholderInput="MM  /  DD  /  AAAA"
       />
-      <h6>Elije tu tipo de pago</h6>
-      <div
-        className="container-pago"
-        ref={refPago}
-        style={{ border: `thin solid ${color}` }}
-      >
+      <div className="container-pago" ref={refPago}>
+        <h6>horario</h6>
         <div
           ref={refContado}
+          style={{ border: `thin solid ${color}` }}
           onClick={() => checkbox(refContado, refPago, checkboxStyle)}
         >
-          Contado
+          Mañana
         </div>
         <div
-          className="checkbox"
           ref={refCredito}
+          style={{ border: `thin solid ${color}` }}
           onClick={() => checkbox(refCredito, refPago, checkboxStyle)}
         >
-          Crédito
+          Medio Día
+        </div>
+        <div
+          style={{ border: `thin solid ${color}` }}
+          ref={refTarde}
+          onClick={() => checkbox(refTarde, refPago, checkboxStyle)}
+        >
+          Tarde
         </div>
       </div>
-      <div className="form-pago">
-        <FormPersonales
-          typeInput="text"
-          labelFor="enganche"
-          labelText="Cantidad de enganche"
-          placeholderInput="80, 000.00"
-        />
-        <FormSelect seccion="plazo" options={DB.plazos} />
-      </div>
-      <TitleSection
-        title="Comentarios"
-        subtitle="Nos importan tus comentarios"
-      />
     </section>
   );
 };

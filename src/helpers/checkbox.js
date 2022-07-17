@@ -3,7 +3,8 @@ export const checkbox = (element, conainerParent, checkboxStyle) => {
     $elementParent = conainerParent.current.childNodes;
 
   $elementParent.forEach((el) => {
-    el.removeAttribute("style");
+    el.style.color = checkboxStyle.backgroundColor;
+    el.style.backgroundColor = "transparent";
   });
   $elementClick.style.color = checkboxStyle.color;
   $elementClick.style.backgroundColor = checkboxStyle.backgroundColor;

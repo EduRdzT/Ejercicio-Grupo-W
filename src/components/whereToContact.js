@@ -5,8 +5,7 @@ import { checkbox } from "../helpers/checkbox";
 const WhereToContact = () => {
   let refContacto = useRef(),
     refTelefono = useRef(),
-    refEmail = useRef(),
-    refAmbos = useRef();
+    refEmail = useRef();
   const { checkboxStyle, color } = useContext(DisignContext);
 
   useEffect(() => {
@@ -15,33 +14,21 @@ const WhereToContact = () => {
 
   return (
     <>
-      <h6>Deseo ser contactado por</h6>
-      <div
-        className="container-checkbox"
-        ref={refContacto}
-        style={{ border: `thin solid ${color}` }}
-      >
+      <div className="container-checkbox" ref={refContacto}>
         <div
           ref={refTelefono}
+          style={{ border: `thin solid ${color}` }}
           onClick={() => checkbox(refTelefono, refContacto, checkboxStyle)}
         >
-          <i className="fa-solid fa-phone"></i>
-          <p>Teléfono</p>
+          <p>Fijo</p>
         </div>
 
         <div
           ref={refEmail}
+          style={{ border: `thin solid ${color}` }}
           onClick={() => checkbox(refEmail, refContacto, checkboxStyle)}
         >
-          <i className="fa-solid fa-envelope"></i>
-          <p>Email</p>
-        </div>
-
-        <div
-          ref={refAmbos}
-          onClick={() => checkbox(refAmbos, refContacto, checkboxStyle)}
-        >
-          Ambos
+          <p>Móvil</p>
         </div>
       </div>
     </>
