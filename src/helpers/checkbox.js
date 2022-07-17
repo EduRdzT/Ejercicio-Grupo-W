@@ -1,9 +1,10 @@
-export const checkbox = (element, conainerParent) => {
+export const checkbox = (element, conainerParent, checkboxStyle) => {
   const $elementClick = element.current,
     $elementParent = conainerParent.current.childNodes;
 
   $elementParent.forEach((el) => {
-    el.classList.remove("checkbox");
+    el.removeAttribute("style");
   });
-  $elementClick.classList.add("checkbox");
+  $elementClick.style.color = checkboxStyle.color;
+  $elementClick.style.backgroundColor = checkboxStyle.backgroundColor;
 };

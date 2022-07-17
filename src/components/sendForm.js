@@ -1,8 +1,14 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
+import DisignContext from "../context/disignContext";
 
 const SendForm = () => {
   let refPrivacidad = useRef(),
     refPromociones = useRef();
+  const { color } = useContext(DisignContext);
+  const submitStyle = {
+    border: `thin solid ${color}`,
+    color: color,
+  };
 
   const clickCheckbox = (ref) => {
     if (ref.current.matches(".fa-check")) {
@@ -36,7 +42,12 @@ const SendForm = () => {
           <p>No deseo recibir promociones</p>
         </div>
       </div>
-      <input type="submit" value="ENVIAR" onClick={(e) => e.preventDefault()} />
+      <input
+        style={submitStyle}
+        type="submit"
+        value="ENVIAR"
+        onClick={(e) => e.preventDefault()}
+      />
     </div>
   );
 };

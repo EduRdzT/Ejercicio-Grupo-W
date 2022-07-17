@@ -1,5 +1,5 @@
 {
-  "modelo": ["selecciona", "Mobi", "Argo", "Pulse", "Ducato Carga Van"],
+  "modelo": ["selecciona", "Mobi", "Argo", "Pulse", "Ducato Cargo Van"],
   "version": {
     "selecciona": "selecciona",
     "Mobi": ["Mobi Trekking", "Mobi Like"],
@@ -15,7 +15,7 @@
       "Pulse Audace",
       "Pulse Impetus"
     ],
-    "Ducato Carga Van": [
+    "Ducato Cargo Van": [
       "Ducato Cargo Van 15 M3",
       "Ducato Cargo Van 11.5 M3",
       "Ducato Cargo Van 9.5 M3"

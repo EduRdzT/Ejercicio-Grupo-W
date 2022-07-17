@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import DisignContext from "../context/disignContext";
 
 const FormSelect = ({ seccion, options = ["selecciona"], modelo }) => {
+  const { color } = useContext(DisignContext);
+
   return (
     <div className="inputSelect">
       <label htmlFor={seccion}>{seccion}</label>
-      <select name={seccion} id={seccion} onChange={modelo}>
+      <select
+        name={seccion}
+        id={seccion}
+        onChange={modelo}
+        style={{ border: `1px solid ${color}` }}
+      >
         {typeof options === "string" ? (
           <option value="selecciona">selecciona</option>
         ) : (
