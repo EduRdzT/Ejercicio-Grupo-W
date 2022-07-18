@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Auto from "../assets/Fiat_500X_RED.png";
 import ChooseCar from "./chooseCar";
 import TitleSection from "./titleSection";
@@ -7,13 +7,15 @@ import WayToPay from "./wayToPay";
 import InputTextArea from "./inputTextArea";
 import SendForm from "./sendForm";
 import DisignContext from "../context/disignContext";
+import { ReactComponent as MobiSVG } from "../assets/fiat-mobi.svg";
+import { ReactComponent as DucatoSVG } from "../assets/fiat-ducato.svg";
+import { ReactComponent as ArgoSVG } from "../assets/fiat-argo.svg";
 
 const Formulario = ({ disign }) => {
   const [modelo, setModelo] = useState(["selecciona"]);
   const [estados, setEstados] = useState(["selecciona"]);
-  const [car, setCar] = useState(Auto);
-  const [imgSVG, setImgSVG] = useState("");
-  const { setColor } = useContext(DisignContext);
+  const { color, setColor } = useContext(DisignContext);
+  let refCar = useRef(Auto);
 
   useEffect(() => {
     const $body = document.getElementById("disign");
@@ -21,16 +23,24 @@ const Formulario = ({ disign }) => {
       if (e.model === modelo) {
         $body.style.background = `linear-gradient(-10deg, ${e.fgColor} 50%, ${e.bgColor} 50%) no-repeat`;
         setColor(e.fgColor);
-        setCar(e.src);
-        setImgSVG(e.svg);
+        refCar.current = e.src;
+        return;
       }
     });
-  }, [modelo, disign, setColor, setCar, setImgSVG]);
+  }, [modelo, disign, setColor]);
 
   return (
     <form id="form">
-      <img src={imgSVG} alt="Auto Shadow" />
-      <img src={car} alt="Auto Fiat" />
+      {modelo === "Mobi" ? (
+        <MobiSVG fill={color} />
+      ) : modelo === "Argo" ? (
+        <ArgoSVG fill={color} />
+      ) : modelo === "Ducato Cargo Van" ? (
+        <DucatoSVG fill={color} />
+      ) : (
+        <></>
+      )}
+      <img src={refCar.current} alt="Auto Fiat" />
 
       <ChooseCar
         setEstados={setEstados}
