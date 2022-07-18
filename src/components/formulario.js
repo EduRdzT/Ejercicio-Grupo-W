@@ -11,6 +11,8 @@ import DisignContext from "../context/disignContext";
 const Formulario = ({ disign }) => {
   const [modelo, setModelo] = useState(["selecciona"]);
   const [estados, setEstados] = useState(["selecciona"]);
+  const [car, setCar] = useState(Auto);
+  const [imgSVG, setImgSVG] = useState("");
   const { setColor } = useContext(DisignContext);
 
   useEffect(() => {
@@ -19,13 +21,16 @@ const Formulario = ({ disign }) => {
       if (e.model === modelo) {
         $body.style.background = `linear-gradient(-10deg, ${e.fgColor} 50%, ${e.bgColor} 50%) no-repeat`;
         setColor(e.fgColor);
+        setCar(e.src);
+        setImgSVG(e.svg);
       }
     });
-  }, [modelo, disign, setColor]);
+  }, [modelo, disign, setColor, setCar, setImgSVG]);
 
   return (
     <form id="form">
-      <img src={Auto} alt="Auto Fiat" />
+      <img src={imgSVG} alt="Auto Shadow" />
+      <img src={car} alt="Auto Fiat" />
 
       <ChooseCar
         setEstados={setEstados}

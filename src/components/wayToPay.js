@@ -20,7 +20,7 @@ const WayToPay = () => {
         typeInput="text"
         labelFor="fecha"
         labelText="fecha"
-        placeholderInput="MM  /  DD  /  AAAA"
+        placeholderInput="MM   /   DD   /   AAAA"
       />
       <div className="container-pago" ref={refPago}>
         <h6>horario</h6>
